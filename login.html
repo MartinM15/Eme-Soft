@@ -1,68 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
 
 <head>
+    <title> Eme soft: inicio de sesión
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="estilo - login.css" type="text/css" media="print, screen">
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>SB Admin - Login</title>
-
-  <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template-->
-  <link href="css/sb-admin.css" rel="stylesheet">
-
+    <style>
+        html {
+            display: none;
+        }
+    </style>
+    <script>
+        if (self == top) {
+            document.documentElement.style.display = 'block';
+        } else {
+            top.location = self.location;
+        }
+    </script>
+    <script>
+        jQuery(document).ready(function($) {
+            doLoad();
+        });
+    </script>
+    <script>
+        stripHTML();
+    </script>
 </head>
 
-<body class="bg-dark">
 
-  <div class="container">
-    <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
-      <div class="card-body">
-        <form>
-          <div class="form-group">
-            <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
-              <label for="inputEmail">Email address</label>
+<body class="f17 f17v2">
+
+    <div class="f17w1">
+        <div class="f17w2" style="display:none"><img src="fondo-login.jpg"></div>
+        <!-- U16v0 -->
+
+        <div id="u16" class="u16 u16v0">
+            <div class="u16w1">
+                <a href="index.html" tabindex="9">Eme soft</a>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="form-label-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-              <label for="inputPassword">Password</label>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="remember-me">
-                Remember Password
-              </label>
-            </div>
-          </div>
-          <a class="btn btn-primary btn-block" href="index.html">Login</a>
-        </form>
-        <div class="text-center">
-          <a class="d-block small mt-3" href="register.html">Register an Account</a>
-          <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
         </div>
-      </div>
+        <!-- /U16v0 -->
+        <!-- CB41v0 -->
+        <div class="cb41 cb41v0">
+
+            <div class="cb41w1">
+                <h2> Eme Soft
+                </h2>
+                <h3> Inicio de sesión Empresarial
+                </h3>
+                <form method="post" action="/oam/server/sso/auth_cred_submit" name="LoginForm" autocomplete="off">
+                    <ul>
+                        <input type="hidden" name="v" value="v1.4">
+                        <input type="hidden" name="request_id" value="5865350862587749982">
+
+
+                        <input type="hidden" name="locale" value="">
+                        <li>
+                            <div class="cb41w2">
+                                <label for="sso_username">
+<span class="hideFromScreen">
+<span id="readerunameerrormsg" class="error-show"></span>
+<span id="readerunamerequired" class="error-hide"> ERROR:
+Introduzca su nombre de usuario y su contraseña
+</span>
+</span>
+</label>
+                                <input type="text" id="sso_username" name="ssousername" title=" Introduzca un nombre de usuario
+" maxlength="80" value="" tabindex="1" placeholder="Nombre de Usuario" />
+                                <span class="cb41w5">
+<span class="cb41w6">
+<span role="tooltip" class="cb41noteshoverbtn" tabindex="5" title=" Ayuda con el nombre de usuario
+"><span class="cb41notescontent">
+     La dirección de correo electrónico es normalmente el nombre de usuario.
+<a href=" "
+ tabindex="6" target="_blank"> ¿Ha olvidado el nombre de usuario?
+</a></span>
+                                <span class="cb41btnhvr"></span>
+
+                                </span>
+                                </span>
+                                </span>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cb41w3">
+                                <label for="ssopassword">
+<span class="hideFromScreen">
+<span id="readerpwderrormsg" class="error-show"></span>
+<span id="readerpwdrequired" class="error-hide"> ERROR:
+Introduzca su nombre de usuario y su contraseña
+</span>
+</span>
+</label>
+                                <input type="password" id="ssopassword" name="password" title=" Introduzca una contraseña
+" value="" maxlength="255" tabindex="2" placeholder="Contraseña" />
+                                <span class="cb41w5">
+<span class="cb41w6">
+<span role="tooltip" class="cb41noteshoverbtn" tabindex="7" title=" Ayuda con la contraseña">
+<span class="cb41notescontent"><a href=" https://profile.oracle.com/myprofile/account/forgot-password.jspx" 
+tabindex="8" target="_blank"> ¿Ha olvidado su contraseña?
+</a>
+</span>
+                                </span>
+                                </span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cb41w7">
+                        <span id="required" class="error-hide">
+<div class="cb41error">
+Introduzca su nombre de usuario y su contraseña
+</div>
+</span>
+                    </div>
+                    <div class="cb41w4">
+                        <span><input type="button" href="index.html" value=" Iniciar sesión
+" tabindex="3" title=" Haga clic aquí para iniciar sesión
+"/></span>
+                        <h2 id="Equipment"><a href="index.html">Iniciar Sesion</a></h2>
+                    </div>
+                    <div class="need-help">
+                        <a href="
+" tabindex="4" target="_blank"> ¿Necesita ayuda?
+</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="cb41w1">
+                <h3> ¿No tiene una cuenta de Eme-Soft?
+                </h3>
+                <div class="cb41w4">
+                    <span>
+<a href="
+" class="cb41create-btn" tabindex="9" target="_blank"> Crear una cuenta
+</a>
+</span>
+                </div>
+                <div class="cb41w8">
+                    <!-- U17v0 -->
+                    <div id="u17" class="u17 u17v0">
+                        <div class="u17w1 cwidth">
+                            <ul>
+                                <li>&copy; Eme-Soft</li>
+                                <li><a href="
+" target="_blank"> Condiciones de uso
+</a></li>
+                                <li><a href="
+" target="_blank"> Política de privacidad
+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /U17v0 -->
+                </div>
+                <!-- /CB41w8 -->
+            </div>
+            <!-- /CB41w1 -->
+        </div>
+        <!-- /CB41v0 -->
     </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
 </body>
+
+
 
 </html>
