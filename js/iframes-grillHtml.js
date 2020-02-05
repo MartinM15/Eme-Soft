@@ -21,6 +21,13 @@ $(document).ready(function() {
         frame.attr('src', url).show();
 
     });
+    $("#btnGenerarOrdenMantto").click(function(e) {
+
+        var frame = $('#FrameId');
+        var url = 'OrdMaintenanceGrid.html';
+        frame.attr('src', url).show();
+
+    });
     $(function() {
         $('#datetimepicker1').datetimepicker();
     });
