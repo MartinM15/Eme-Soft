@@ -123,6 +123,7 @@
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <h6 class="dropdown-header">Administrador</h6>
                     <a class="dropdown-item" id="btnPanelUser" name="btnPanelUser" href="#" role="button">Usuarios</a>
+                    <!--se agrega para salida iframe-->
                     <h6 class="dropdown-header">Ver Principales</h6>
                     <a class="dropdown-item" href="login.html ">Ingenieros</a>
 
@@ -214,85 +215,28 @@
                 <!-- Icon Cards-->
                 <div class="row">
                     <div class="col-xl-3 col-sm-6 mb-3btn">
-                        <div class="card text-white bg-primary o-hidden h-100">
-                            <a class="card-footer text-white clearfix smallbtn z-1" href="#">
-                                <div class="card-bodybtn">
-                                    <div class="card-body-icon">
-                                        <i class="fas fa-fw fa-comments"></i>
-                                    </div>
-                                    <div class="mr-5">Orden de trabajo
-                                        <span class="float-right">
-                                            <i class="fas fa-angle-right"></i>
-                                            <i class="fas fa-angle-right"></i>
-                                          </span>
-                                    </div>
-
-
-
-                                </div>
-                            </a>
+                        <div class="card">
+                            <button type="button" class="btn btn-primary btn-lg btn-block"> <i class="fas fa-user"></i> Usuarios</button>
                         </div>
                     </div>
                     <div class="col-xl-3 col-sm-6 mb-3btn">
-                        <div class="card text-white bg-warning o-hidden h-100">
-                            <a class="card-footer text-white clearfix smallbtn z-1" href="#">
-                                <div class="card-bodybtn">
-                                    <div class="card-body-icon">
-                                        <i class="fas fa-fw fa-list"></i>
-                                    </div>
-                                    <div class="mr-5">Alta de Equipo
-                                        <span class="float-right">
-                                            <i class="fas fa-angle-right"></i>
-                                            <i class="fas fa-angle-right"></i>
-                                          </span>
-                                    </div>
-
-
-                                </div>
-                            </a>
+                        <div class="card">
+                            <button type="button" class="btn btn-success btn-lg btn-block"><i class="fas fa-industry"></i> Equipos</button>
                         </div>
                     </div>
                     <div class="col-xl-3 col-sm-6 mb-3btn">
-                        <div class="card text-white bg-success o-hidden h-100">
-                            <a class="card-footer text-white clearfix smallbtn z-1" href="#">
-                                <div class="card-bodybtn">
-                                    <div class="card-body-icon">
-                                        <i class="fas fa-fw fa-shopping-cart"></i>
-                                    </div>
-                                    <div class="mr-5">Estatus de Ordenes de Trabajo
-                                        <span class="float-right">
-                                            <i class="fas fa-angle-right"></i>
-                                            <i class="fas fa-angle-right"></i>
-                                          </span>
-
-                                    </div>
-
-
-                                </div>
-                            </a>
+                        <div class="card">
+                            <button type="button" class="btn btn-warning btn-lg btn-block"> <i class="fas fa-wrench"></i> Mantenimientos</button>
                         </div>
                     </div>
                     <div class="col-xl-3 col-sm-6 mb-3btn">
-                        <div class="card text-white bg-danger o-hidden h-100">
-                            <a class="card-footer text-white clearfix smallbtn z-1" href="#">
-                                <div class="card-bodybtn">
-                                    <div class="card-body-icon">
-                                        <i class="fas fa-fw fa-life-ring"></i>
-                                    </div>
-
-                                    <div class="mr-5">Acciones Urgentes
-                                        <span class="float-right">
-                                            <i class="fas fa-angle-right"></i>
-                                            <i class="fas fa-angle-right"></i>
-                                          </span>
-                                    </div>
-
-
-                                </div>
-                            </a>
+                        <div class="card">
+                            <button type="button" class="btn btn-dark btn-lg btn-block"> <i class="fas fa-archive"></i> Evidencias</button>
                         </div>
                     </div>
+
                 </div>
+
 
                 <!--div gradiente-->
                 <div class="gradiente"></div>
@@ -303,7 +247,7 @@
                     <!--    <div class="card-header">
                         <i class="fas fa-chart-area"></i> AREA PRINCIPAL</div>-->
 
-                    <iframe frameborder="0" style="width: 100%; height: 1100px; position: relative;" id="FrameId" name="FrameId" scrolling="si"></iframe>
+                    <iframe frameborder="0" style="width: 100%; height: 1000px; position: relative;" id="FrameId" name="FrameId" scrolling="si" src="Graficas.html"></iframe>
 
 
 

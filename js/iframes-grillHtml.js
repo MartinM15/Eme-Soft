@@ -4,11 +4,46 @@ $(document).ready(function() {
 
         var frame = $('#FrameId');
         var url = 'Graficas1.html';
-        frame.attr('src', url).show();
+        var actual = $('#FrameId');
+        var url1 = actual.attr('src');
+        if (url != url1) {
+            var mensaje = confirm(" Salir del Vista Actual ?");
+            if (mensaje) {
+                frame.attr('src', url).show();
+
+            }
+        }
+
+
 
     });
-    $("#btnPanelUser").click(function(e) {
+    //modalsalirIframe
 
+    $("#btnPanelUser").click(function(event) {
+
+        var actual = $('#FrameId');
+        var url1 = actual.attr('src');
+
+        var frame = $('#FrameId');
+        var url = 'UsuariosGrid.html';
+
+        if (url != url1) {
+            var mensaje = confirm(" Salir del Vista Actual ?");
+            if (mensaje) {
+                frame.attr('src', url).show();
+
+            }
+        }
+
+    });
+    $("#sbtnPanelUser").click(function(e) {
+        //alert(src);
+        var enlace = $("#Iframe").attr('src', url);
+        //alert(src)
+
+
+        // alert("tienes una session iniciada")
+        alert($("#Iframe").attr("src"))
         var frame = $('#FrameId');
         var url = 'UsuariosGrid.html';
         frame.attr('src', url).show();
@@ -18,20 +53,45 @@ $(document).ready(function() {
 
         var frame = $('#FrameId');
         var url = 'EquiposGrid.html';
-        frame.attr('src', url).show();
+        var actual = $('#FrameId');
+        var url1 = actual.attr('src');
+        if (url != url1) {
+            var mensaje = confirm(" Salir del Vista Actual ?");
+            if (mensaje) {
+                frame.attr('src', url).show();
+
+            }
+        }
 
     });
     $("#btnGenerarOrdenMantto").click(function(e) {
 
         var frame = $('#FrameId');
         var url = 'OrdMaintenanceGrid.html';
-        frame.attr('src', url).show();
+        var actual = $('#FrameId');
+        var url1 = actual.attr('src');
+        if (url != url1) {
+            var mensaje = confirm(" Salir del Vista Actual ?");
+            if (mensaje) {
+                frame.attr('src', url).show();
+
+            }
+        }
 
     });
+
     $("#btnEvidenciasMantto").click(function(e) {
         var frame = $('#FrameId');
         var url = 'EvidenciasGrid.html';
-        frame.attr('src', url).show();
+        var actual = $('#FrameId');
+        var url1 = actual.attr('src');
+        if (url != url1) {
+            var mensaje = confirm(" Salir del Vista Actual ?");
+            if (mensaje) {
+                frame.attr('src', url).show();
+
+            }
+        }
     });
 
     $('#inputGroupFile01').change(function(e) {

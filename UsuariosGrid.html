@@ -96,7 +96,8 @@
                 <div class="card mb-3">
                     <!--  <div class="card-header">
                         <i class="fas fa-chart-area"></i> Administrador de Usuarios</div>-->
-                    <span class="badge badge-primary">Usuarios</span>
+
+                    <span class="text-center badge badge-primary"><h5><i class="fas fa-user-cog"></i>    Panel de Usuarios</h5></span>
                     <div class="card-body">
                         <!-- Area de prueba-->
                         <nav>
@@ -323,20 +324,21 @@
     </div>
     <!-- /#wrapper -->
     <!-- Modal de confirmacion de formulario usuario -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal" id="modalsalirIframe" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Confirmar</h5>
+                    <h5 class="modal-title">Atencion !</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+                <span aria-hidden="true">&times;</span>
+              </button>
                 </div>
                 <div class="modal-body">
+                    <p>Salir de la Vista Actual - Se Perderan los datos Ingresados</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                    <button type="button" class="btn btn-primary">Continuar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
                 </div>
             </div>
         </div>
